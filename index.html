@@ -5,40 +5,49 @@
          <meta http-equiv="X-UA-Compatible" content="IE=edge">
          <meta name="viewport" content="width=device-width, initial-scale=1.0">
          <title>Portfolio</title>
+         
          <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+         
          <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
     integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link rel="stylesheet" href="./styles/style.css">
+    
      </head>
      <body>
-        
-         <div class="info" id="home">
-             <h1>Temo Gagnidze</h1>
-             <h2>Front-end Developer</h2>
-             <p>some text goes here</p>
-             <div class="info-btn">
-                <button type="button" class="btn btn-outline-light ">EXPLORE WORK</button>
-                <button type="button" class="btn btn-outline-light ">VIEW PROFILE </button>
-             </div>
+       <main>
+          <div class="banner">
+            <div class="info" id="home">
+              <h1>Temo Gagnidze</h1>
+              <h2>Front-end Developer</h2>
+              <h5>Hi. I produce elegant, performant, and accessible digital experiences at Torchbox, UK.</h5>
+              <div class="info-btn">
+                 <a href="#work"><button type="button" class="btn btn-outline-light ">EXPLORE WORK</button></a>
+                 <a href="#work"><button type="button" class="btn btn-outline-light ">VIEW PROFILE</button></a>
+              </div>
+          </div>
+          </div>
+        </main>
+        <div class="section" id="work">
+         <div class="banner2">
+
          </div>
-         
+        </div>
+
+        
        
 
        
          
 
          <script>
-             gsap.from('.info', { duration: 1.8, x: '-60%', ease: 'bounce.out' });
-             gsap.from('body', { duration: 1.8, opacity: 0, delay: 1 });
-             gsap.from('button', { duration: 1, opacity: 0, delay: 2, stagger: .4 });
+             gsap.from('.info', { duration: 1.8, y: '-100%', ease: 'sine.out', delay:0.5  });
+             gsap.from('body', { duration: 1.8, opacity: 0,  });
+             gsap.from('button', { duration: 1.8, x:'-100%',ease:'bounce.out', opacity: 0,  delay: 1.4, stagger: .7 });
              
-            
-             
-            
          </script>
 
 
-      
+
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
